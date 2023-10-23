@@ -18,9 +18,10 @@ img {
 }
 
 .header-container {
+	margin: 0 auto;
 	width: 1240px;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	display: flex;
 	padding: 5px;
 }
@@ -50,4 +51,59 @@ img {
 
 .social-logo {
 	width: 36px;
+}
+
+.banner {
+	margin-bottom: 10px;
+}
+
+.menu-section-title {
+	margin: 0 auto 35px;
+	max-width: 480px;
+	font-size: 24px;
+	padding: 10px;
+	text-align: center;
+	color: black;
+	border-bottom: 1px solid #b35c33d0;
+}
+
+.menu-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.menu-item {
+	display: flex;
+	padding: 5px;
+	margin: 20px;
+}
+
+.menu-item header {
+	padding: 5px;
+	border-bottom: 1px solid #b35c33d0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu-item h3 {
+	font-weight: 600;
+	color: #af552b;
+}
+
+.menu-item img {
+	margin-right: 20px;
+	height: 200px;
+	max-width: 200px;
+}
+
+.item-description {
+	letter-spacing: 1px;
+	font-weight: bold;
+	margin-top: 5px;
+	color: #160f0c93;
+}
+
+footer {
+	background-color: #573627;
 }
