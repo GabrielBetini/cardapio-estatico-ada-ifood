@@ -11,6 +11,11 @@ img {
 	max-width: 100%;
 }
 
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
 #principal-header {
 	display: flex;
 	background-color: #573627;
@@ -47,6 +52,7 @@ img {
 
 #logo {
 	width: 90px;
+	height: auto;
 }
 
 .social-logo {
@@ -104,6 +110,129 @@ img {
 	color: #160f0c93;
 }
 
+.tabela-nutricional {
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+.tabela-nutricional th {
+	color: white;
+	background-color: black;
+	padding: 10px;
+	border: 2px solid;
+}
+
+.tabela-nutricional td {
+	padding: 5px;
+	border: 1px solid;
+}
+
 footer {
 	background-color: #573627;
+}
+
+.footer-c {
+	color: white;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+	padding: 2em;
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	gap: 2em;
+}
+
+.footer-c img {
+	max-width: 140px;
+}
+
+.footer-list {
+	padding: 10px;
+	list-style: none;
+	line-height: 28px;
+}
+
+.footer-list li:hover {
+	border-bottom: 1px solid white;
+	margin-bottom: -1px;
+}
+
+.footer-form {
+	width: 400px;
+	padding: 15px;
+}
+
+.footer-form a {
+	color: #fa7233;
+}
+
+.footer-form a:hover {
+	border-bottom: 1px solid #fa7233;
+}
+
+#newsletter {
+	letter-spacing: 2px;
+}
+
+.email-input {
+	color: white;
+	padding: 5px;
+	background: transparent;
+	border: none;
+}
+
+.email-input:focus {
+	outline: none;
+}
+
+.email-input::placeholder {
+	color: white;
+}
+
+#submit {
+	cursor: pointer;
+	border-radius: 5px;
+	border: 1px;
+	background-color: #fa7233;
+	font-weight: bold;
+	padding: 10px;
+}
+
+#submit:hover {
+	background-color: #fa72339a;
+}
+
+#submit:active {
+	transform: translateY(-2px);
+}
+
+.input-footer-form {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 5px;
+	outline: 1px solid white;
+	border-radius: 5px;
+}
+
+@media screen and (max-width: 810px) {
+	.menu-item {
+		max-width: 370px;
+	}
+
+	.footer-c {
+		align-items: center;
+		justify-content: center;
+		grid-template-columns: repeat(1, auto);
+	}
+
+	.footer-c ul {
+		text-align: center;
+	}
+
+	.footer-c img {
+		display: none;
+	}
 }
