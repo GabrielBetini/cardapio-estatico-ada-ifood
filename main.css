@@ -20,6 +20,7 @@ a {
 	display: flex;
 	background-color: #573627;
 	justify-content: center;
+	box-shadow: 0px 0px 10px;
 }
 
 .header-container {
@@ -39,8 +40,24 @@ a {
 	list-style: none;
 }
 
+.toggle-btn {
+	padding: 5px;
+	display: none;
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	width: 40px;
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+}
+
+.show-nav {
+	height: 6rem;
+}
+
 .header-li {
-	font-weight: 400;
+	font-weight: 500;
 }
 
 .header-li:hover {
@@ -124,6 +141,7 @@ a {
 }
 
 .tabela-nutricional td {
+	text-align: center;
 	padding: 5px;
 	border: 1px solid;
 }
@@ -219,6 +237,36 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+	.toggle-btn {
+		display: block;
+	}
+
+	#principal-header {
+		position: sticky;
+		top: 0;
+	}
+
+	.header-container {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.social-links {
+		display: none;
+	}
+
+	.header-nav {
+		margin-top: 20px;
+		display: block;
+		height: 6rem;
+		overflow: hidden;
+	}
+
+	.header-nav {
+		line-height: 2em;
+	}
+
 	.footer-c {
 		align-items: center;
 		justify-content: center;
