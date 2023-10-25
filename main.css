@@ -159,7 +159,8 @@ footer {
 }
 
 .footer-form {
-	width: 400px;
+	min-width: none;
+	max-width: 400px;
 	padding: 15px;
 }
 
@@ -217,11 +218,7 @@ footer {
 	border-radius: 5px;
 }
 
-@media screen and (max-width: 810px) {
-	.menu-item {
-		max-width: 370px;
-	}
-
+@media screen and (max-width: 800px) {
 	.footer-c {
 		align-items: center;
 		justify-content: center;
@@ -234,5 +231,23 @@ footer {
 
 	.footer-c img {
 		display: none;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.menu-container {
+		justify-content: center;
+		grid-template-columns: auto;
+	}
+	.menu-item {
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.menu-item header {
+		display: block;
 	}
 }
